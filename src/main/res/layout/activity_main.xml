@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0F2F1"
+        android:paddingBottom="32dp">
+
+
+        <EditText
+            android:id="@+id/enterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:hint="Enter Name"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:textColorHint="#51444444"
+            />
+
+        <LinearLayout
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterName"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gender"
+            android:gravity="center_horizontal"
+            />
+<RadioGroup
+    android:id="@+id/genderRadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+
+            />
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Female"/>
+</RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Science Quiz"
+            android:textSize="36sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gender" />
+
+
+        <LinearLayout
+            android:id="@+id/q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. NaCl is the chemical formula of:"
+            android:padding="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/q1RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
+
+                <RadioButton
+                    android:id="@+id/q1Answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sodium chloride"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nitrous chloride"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ammonia"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nano calcium"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q1"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.Bronze is an alloy consisting of two or more metals. What are they?"
+                android:padding="16dp"/>
+            <RadioGroup
+                android:id="@+id/q2RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copper and zinc"/>
+                <RadioButton
+                    android:id="@+id/q2Answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copper and tin"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copper and gold"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copper and lead"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q2"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Which of these is not a type of bacteria:"
+                android:padding="16dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bacillus"/>
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Argilite"/>
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eridanus"/>
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Annona"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q3"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. What is the first element on the periodic table?"
+                android:padding="16dp"
+                android:hint="Enter Answer Here"/>
+           <EditText
+               android:id="@+id/q4Answer"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+               android:inputType="textNoSuggestions"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q4"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. A galvanised metal has been covered with:"
+                android:padding="16dp"/>
+            <RadioGroup
+                android:id="@+id/q5RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <RadioButton
+                    android:id="@+id/q5Answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zinc"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iron"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oil"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calcium"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/q6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q5"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. What type of electrical charge does a neutron have?"
+                android:padding="16dp"/>
+            <RadioGroup
+                android:id="@+id/q6RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Positive"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negative"/>
+                <RadioButton
+                    android:id="@+id/q6Answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Charge"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Negative"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/q7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q6"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. Mycology is the study of:"
+                android:padding="16dp"/>
+            <RadioGroup
+                android:id="@+id/q8RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insects"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water bodies"/>
+                <RadioButton
+                    android:id="@+id/q8Answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fungi"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volcanos"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/q8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q7"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. The male part of a flower is:"
+                android:padding="16dp"/>
+            <RadioGroup
+                android:id="@+id/q7RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stigma"/>
+                <RadioButton
+                    android:id="@+id/q7Answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pistil" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stamen"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Petal"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/q9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q8"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9. What is the first element on the periodic table?"
+                android:padding="16dp"/>
+            <RadioGroup
+                android:id="@+id/q9RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sodium"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oxygen"/>
+                <RadioButton
+                    android:id="@+id/q9Answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hydrogen"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Helium"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/q10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q9"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10. Air is mostly made up of:"
+                android:padding="16dp"/>
+            <RadioGroup
+                android:id="@+id/q10RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oxygen"/>
+                <RadioButton
+                    android:id="@+id/q10Answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nitrogen"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carbon dioxide"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Argon"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/q10">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/q10"
+                android:text="SUBMIT"
+                android:fontFamily="sans-serif-bold"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:background="#0a0316"
+                android:layout_margin="16dp"
+                android:onClick="submit"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:layout_margin="16dp"
+                android:onClick="resetButton"
+                android:fontFamily="sans-serif-bold"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:background="#0a0316"/>
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>
+
+    </ScrollView>
